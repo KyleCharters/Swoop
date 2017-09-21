@@ -79,7 +79,7 @@ var back_inout =    Fn.new{ |t|
 }
 
 //Bounce
-var bounce_in =		Fn.new{ |t|
+var bounce_in =     Fn.new{ |t|
 
 	t = 1 - t
 	if (t < (1 / 2.75)) {
