@@ -1,25 +1,25 @@
-# wren-easing
+# Swoop
 
 [Easing functions](http://easings.net/) for Wren
 
 ```dart
-import "easing" for Easing, bounce_out
+import "swoop" for Bounce
 
 for (i in 0..100) {
-	System.print(Easing.lerp(i, 0, 100, 100, bounce_out))
+	System.print(Bounce.ease_in(i / 100))
 }
 ```
 
 ##Supported Functions
- * `quad`
- * `cubic`
- * `quart`
- * `quint`
- * `sine`
- * `expo`
- * `circ`
- * `elastic`
- * `back`
- * `bounce`
+ * `Quad`
+ * `Cubic`
+ * `Quart`
+ * `Quint`
+ * `Sine`
+ * `Expo`
+ * `Circ`
+ * `Elastic`
+ * `Back`
+ * `Bounce`
 
-`_in`, `_out`, `_inout`
+`ease_in`, `ease_out`, `ease_inout`
